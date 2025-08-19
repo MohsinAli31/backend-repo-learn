@@ -16,11 +16,6 @@ const PORT = process.env.PORT
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.use("/", async (req, res) => {
-//     res.send("hello from server side")
-
-// });
-
 app.use("/api/user", authRouter);
 
 // Example route: user registration with password hashing
